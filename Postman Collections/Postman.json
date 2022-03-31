@@ -11,7 +11,7 @@
       "item": [
         {
           "name": "Search across all types",
-          "_postman_id": "af9b710f-2170-4e27-a8e4-ae0d5aeb9a68",
+          "id": "af9b710f-2170-4e27-a8e4-ae0d5aeb9a68",
           "request": {
             "method": "GET",
             "header": [
@@ -108,7 +108,7 @@
           },
           "response": [
             {
-              "id": "32e0fe14-65ea-432c-826d-85d4cb00de51",
+              "id": "f7ac6f18-c310-4315-ba9a-89f225a62fb9",
               "name": "response",
               "originalRequest": {
                 "method": "GET",
@@ -190,8 +190,8 @@
                   ]
                 }
               },
-              "status": "Forbidden",
-              "code": 403,
+              "status": "OK",
+              "code": 200,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -201,7 +201,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
+              "body": "{\n  \"count\": 123,\n  \"next\": null,\n  \"previous\": null,\n  \"results\": [\n    {\n      \"id\": 2048,\n      \"object_type\": \"userprofiles\",\n      \"text\": \"Dr John Smith\",\n      \"sort_text\": \"Dr John Smith\",\n      \"avatar\": \"https://VfaRtXRpVEBBpLLXAndEtshwaJtR.qqzcywMtiHUWYIZuVAjQpBOlLTaxn92v8rDvXQnnEYuY6cHymXxKj\",\n      \"url\": \"https://KkPiULTmYOKllWVVdJ.shbf-fGEOcY2L7w3CRYAU0XdfYdWnhyWIVT\",\n      \"extra\": {\n        \"health_fund_relationship\": \"MEMBER_PLUS_DENTAL\",\n        \"locations\": [\n          {\n            \"id\": -16027577,\n            \"name\": \"Lorem\",\n            \"street1\": \"sit sunt ad\",\n            \"street2\": \"laboris Ut\",\n            \"suburb\": \"adipisicing ullamco sint do\",\n            \"post_code\": \"commodo enim\",\n            \"state\": \"magna in mollit ad\",\n            \"lat\": -30698824.83824253,\n            \"lng\": -40995881.761006325,\n            \"website\": \"ullamco ut ut in\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          },\n          {\n            \"id\": 35353190,\n            \"name\": \"esse\",\n            \"street1\": \"dolore laborum ut dolor\",\n            \"street2\": \"ut non voluptate elit\",\n            \"suburb\": \"ut incididunt ullamco deserunt\",\n            \"post_code\": \"velit consectetur\",\n            \"state\": \"voluptate laborum sint adipisicing ut\",\n            \"lat\": -70668648.95872226,\n            \"lng\": 26340319.994312942,\n            \"website\": \"mollit in incididunt consequat Lorem\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          }\n        ],\n        \"website\": \"et nisi amet irure\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"should_promote\": false\n    },\n    {\n      \"id\": 2048,\n      \"object_type\": \"userprofiles\",\n      \"text\": \"Dr John Smith\",\n      \"sort_text\": \"Dr John Smith\",\n      \"avatar\": \"https://QZtF.msxY2JX3m,M,t7HS0FESa2SW7qF4SbrXfQvtvzmTZw\",\n      \"url\": \"http://vPcUGBJCmykprMBP.ljzv1QgV+3xSQd3\",\n      \"extra\": {\n        \"health_fund_relationship\": \"HBF_OWNED\",\n        \"locations\": [\n          {\n            \"id\": 70125231,\n            \"name\": \"occaecat ut\",\n            \"street1\": \"enim nulla\",\n            \"street2\": \"incididunt ad\",\n            \"suburb\": \"velit eu cillum\",\n            \"post_code\": \"ut dolor ex\",\n            \"state\": \"Duis deserunt esse\",\n            \"lat\": -3209366.2113962024,\n            \"lng\": -28049592.743163392,\n            \"website\": \"sunt ad laboris\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          },\n          {\n            \"id\": -99832011,\n            \"name\": \"dolore sed\",\n            \"street1\": \"dolore\",\n            \"street2\": \"exercitation cupidatat\",\n            \"suburb\": \"qui nulla sit sed esse\",\n            \"post_code\": \"irure\",\n            \"state\": \"ut est reprehenderit\",\n            \"lat\": 57716834.39158028,\n            \"lng\": -3385510.833946049,\n            \"website\": \"ipsum laborum voluptate\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          }\n        ],\n        \"website\": \"qui in sint magna\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"should_promote\": false\n    }\n  ]\n}"
             },
             {
               "id": "d95049d2-dd58-476f-98d6-736605fba2b1",
@@ -300,7 +300,7 @@
               "body": "{\n  \"type_limit\": [\n    \"A valid integer is required.\",\n    \"A valid integer is required.\"\n  ],\n  \"health_fund\": [\n    \"Invalid health fund ID\",\n    \"Invalid health fund ID\"\n  ]\n}"
             },
             {
-              "id": "f7ac6f18-c310-4315-ba9a-89f225a62fb9",
+              "id": "32e0fe14-65ea-432c-826d-85d4cb00de51",
               "name": "response",
               "originalRequest": {
                 "method": "GET",
@@ -382,8 +382,8 @@
                   ]
                 }
               },
-              "status": "OK",
-              "code": 200,
+              "status": "Forbidden",
+              "code": 403,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -393,13 +393,13 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n  \"count\": 123,\n  \"next\": null,\n  \"previous\": null,\n  \"results\": [\n    {\n      \"id\": 2048,\n      \"object_type\": \"userprofiles\",\n      \"text\": \"Dr John Smith\",\n      \"sort_text\": \"Dr John Smith\",\n      \"avatar\": \"https://VfaRtXRpVEBBpLLXAndEtshwaJtR.qqzcywMtiHUWYIZuVAjQpBOlLTaxn92v8rDvXQnnEYuY6cHymXxKj\",\n      \"url\": \"https://KkPiULTmYOKllWVVdJ.shbf-fGEOcY2L7w3CRYAU0XdfYdWnhyWIVT\",\n      \"extra\": {\n        \"health_fund_relationship\": \"MEMBER_PLUS_DENTAL\",\n        \"locations\": [\n          {\n            \"id\": -16027577,\n            \"name\": \"Lorem\",\n            \"street1\": \"sit sunt ad\",\n            \"street2\": \"laboris Ut\",\n            \"suburb\": \"adipisicing ullamco sint do\",\n            \"post_code\": \"commodo enim\",\n            \"state\": \"magna in mollit ad\",\n            \"lat\": -30698824.83824253,\n            \"lng\": -40995881.761006325,\n            \"website\": \"ullamco ut ut in\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          },\n          {\n            \"id\": 35353190,\n            \"name\": \"esse\",\n            \"street1\": \"dolore laborum ut dolor\",\n            \"street2\": \"ut non voluptate elit\",\n            \"suburb\": \"ut incididunt ullamco deserunt\",\n            \"post_code\": \"velit consectetur\",\n            \"state\": \"voluptate laborum sint adipisicing ut\",\n            \"lat\": -70668648.95872226,\n            \"lng\": 26340319.994312942,\n            \"website\": \"mollit in incididunt consequat Lorem\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          }\n        ],\n        \"website\": \"et nisi amet irure\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"should_promote\": false\n    },\n    {\n      \"id\": 2048,\n      \"object_type\": \"userprofiles\",\n      \"text\": \"Dr John Smith\",\n      \"sort_text\": \"Dr John Smith\",\n      \"avatar\": \"https://QZtF.msxY2JX3m,M,t7HS0FESa2SW7qF4SbrXfQvtvzmTZw\",\n      \"url\": \"http://vPcUGBJCmykprMBP.ljzv1QgV+3xSQd3\",\n      \"extra\": {\n        \"health_fund_relationship\": \"HBF_OWNED\",\n        \"locations\": [\n          {\n            \"id\": 70125231,\n            \"name\": \"occaecat ut\",\n            \"street1\": \"enim nulla\",\n            \"street2\": \"incididunt ad\",\n            \"suburb\": \"velit eu cillum\",\n            \"post_code\": \"ut dolor ex\",\n            \"state\": \"Duis deserunt esse\",\n            \"lat\": -3209366.2113962024,\n            \"lng\": -28049592.743163392,\n            \"website\": \"sunt ad laboris\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          },\n          {\n            \"id\": -99832011,\n            \"name\": \"dolore sed\",\n            \"street1\": \"dolore\",\n            \"street2\": \"exercitation cupidatat\",\n            \"suburb\": \"qui nulla sit sed esse\",\n            \"post_code\": \"irure\",\n            \"state\": \"ut est reprehenderit\",\n            \"lat\": 57716834.39158028,\n            \"lng\": -3385510.833946049,\n            \"website\": \"ipsum laborum voluptate\",\n            \"phones\": [\n              \"(02) 9972 2639\",\n              \"(02) 9972 2639\"\n            ],\n            \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\"\n          }\n        ],\n        \"website\": \"qui in sint magna\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"should_promote\": false\n    }\n  ]\n}"
+              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
             }
           ]
         },
         {
           "name": "Search for practitioners by specialty and suburb",
-          "_postman_id": "8dc3aff3-d4c1-4ae4-8021-596fe27e52b1",
+          "id": "8dc3aff3-d4c1-4ae4-8021-596fe27e52b1",
           "request": {
             "method": "GET",
             "header": [
@@ -490,6 +490,98 @@
             "description": "Returns list of practitoners matching search parameters."
           },
           "response": [
+            {
+              "id": "8f6fd6a6-3db0-465d-9ec5-749f4a9c63f0",
+              "name": "response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/partners/v1/directory?locality=271&specialty=19&interest=2401&show=site&health_fund=48&gap_scheme=92513566&language=veniam labore proident pariatur Excepteur&gender=f&max_distance=250&exc=4326&exc=5876&exc=2963&page=2",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "directory"
+                  ],
+                  "query": [
+                    {
+                      "key": "locality",
+                      "value": "271"
+                    },
+                    {
+                      "key": "specialty",
+                      "value": "19"
+                    },
+                    {
+                      "key": "interest",
+                      "value": "2401"
+                    },
+                    {
+                      "key": "show",
+                      "value": "site"
+                    },
+                    {
+                      "key": "health_fund",
+                      "value": "48"
+                    },
+                    {
+                      "key": "gap_scheme",
+                      "value": "92513566"
+                    },
+                    {
+                      "key": "language",
+                      "value": "veniam labore proident pariatur Excepteur"
+                    },
+                    {
+                      "key": "gender",
+                      "value": "f"
+                    },
+                    {
+                      "key": "max_distance",
+                      "value": "250"
+                    },
+                    {
+                      "key": "exc",
+                      "value": "4326"
+                    },
+                    {
+                      "key": "exc",
+                      "value": "5876"
+                    },
+                    {
+                      "key": "exc",
+                      "value": "2963"
+                    },
+                    {
+                      "key": "page",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"count\": 123,\n  \"next\": null,\n  \"previous\": null,\n  \"results\": [\n    {\n      \"id\": 3457,\n      \"title\": \"Dr\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"display_name\": \"Dr John Smith\",\n      \"website\": \"http://www.stvincentssportsmed.com.au/\",\n      \"distance\": 1.5,\n      \"avatar\": \"http://PUOklAKjCgMtvnItDCkJEcvLgfLxsq.zkruX3-qPNU5tHZ1-f4go\",\n      \"health_fund_relationship\": \"FULL_COVER\",\n      \"specialties\": [\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": false\n        },\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": false\n        }\n      ],\n      \"interests_description\": \"Knee replacement surgery\",\n      \"interests_description_html\": \"<p>Knee replacement surgery</p>\",\n      \"offers_hicaps\": false,\n      \"practice_location\": {\n        \"id\": 1900,\n        \"name\": \"Medicentral Specialist Centre\",\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"avatar\": \"https://mSzyXzFNWyyNfAKnMfBTkzXwd.akoUzNU8mtwBL0edUVhmfToFrdsJh8,1y.HS\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"practice\": {\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"location_description\": \"Sydney NSW 2000\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ],\n        \"health_fund_relationship\": \"FULL_COVER\",\n        \"practice_location\": {\n          \"id\": 1900,\n          \"name\": \"Medicentral Specialist Centre\"\n        }\n      }\n    },\n    {\n      \"id\": 3457,\n      \"title\": \"Dr\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"display_name\": \"Dr John Smith\",\n      \"website\": \"http://www.stvincentssportsmed.com.au/\",\n      \"distance\": 1.5,\n      \"avatar\": \"http://iieCXw.ryvww4iWZgKpC+YUzwvln\",\n      \"health_fund_relationship\": \"FULL_COVER\",\n      \"specialties\": [\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": true\n        },\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": true\n        }\n      ],\n      \"interests_description\": \"Knee replacement surgery\",\n      \"interests_description_html\": \"<p>Knee replacement surgery</p>\",\n      \"offers_hicaps\": false,\n      \"practice_location\": {\n        \"id\": 1900,\n        \"name\": \"Medicentral Specialist Centre\",\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"avatar\": \"https://ZDtDONxorDOYfFuiihQXlrcscDXYUvwNu.gdqKI.dlsVMRV89\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"practice\": {\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"location_description\": \"Sydney NSW 2000\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ],\n        \"health_fund_relationship\": \"ACCESS_GAP_COVER\",\n        \"practice_location\": {\n          \"id\": 1900,\n          \"name\": \"Medicentral Specialist Centre\"\n        }\n      }\n    }\n  ]\n}"
+            },
             {
               "id": "634f5064-d5db-444a-ba0e-c38591deb559",
               "name": "response",
@@ -673,104 +765,12 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
-            },
-            {
-              "id": "8f6fd6a6-3db0-465d-9ec5-749f4a9c63f0",
-              "name": "response",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "description": "Added as a part of security scheme: bearer",
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/api/partners/v1/directory?locality=271&specialty=19&interest=2401&show=site&health_fund=48&gap_scheme=92513566&language=veniam labore proident pariatur Excepteur&gender=f&max_distance=250&exc=4326&exc=5876&exc=2963&page=2",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "partners",
-                    "v1",
-                    "directory"
-                  ],
-                  "query": [
-                    {
-                      "key": "locality",
-                      "value": "271"
-                    },
-                    {
-                      "key": "specialty",
-                      "value": "19"
-                    },
-                    {
-                      "key": "interest",
-                      "value": "2401"
-                    },
-                    {
-                      "key": "show",
-                      "value": "site"
-                    },
-                    {
-                      "key": "health_fund",
-                      "value": "48"
-                    },
-                    {
-                      "key": "gap_scheme",
-                      "value": "92513566"
-                    },
-                    {
-                      "key": "language",
-                      "value": "veniam labore proident pariatur Excepteur"
-                    },
-                    {
-                      "key": "gender",
-                      "value": "f"
-                    },
-                    {
-                      "key": "max_distance",
-                      "value": "250"
-                    },
-                    {
-                      "key": "exc",
-                      "value": "4326"
-                    },
-                    {
-                      "key": "exc",
-                      "value": "5876"
-                    },
-                    {
-                      "key": "exc",
-                      "value": "2963"
-                    },
-                    {
-                      "key": "page",
-                      "value": "2"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n  \"count\": 123,\n  \"next\": null,\n  \"previous\": null,\n  \"results\": [\n    {\n      \"id\": 3457,\n      \"title\": \"Dr\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"display_name\": \"Dr John Smith\",\n      \"website\": \"http://www.stvincentssportsmed.com.au/\",\n      \"distance\": 1.5,\n      \"avatar\": \"http://PUOklAKjCgMtvnItDCkJEcvLgfLxsq.zkruX3-qPNU5tHZ1-f4go\",\n      \"health_fund_relationship\": \"FULL_COVER\",\n      \"specialties\": [\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": false\n        },\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": false\n        }\n      ],\n      \"interests_description\": \"Knee replacement surgery\",\n      \"interests_description_html\": \"<p>Knee replacement surgery</p>\",\n      \"offers_hicaps\": false,\n      \"practice_location\": {\n        \"id\": 1900,\n        \"name\": \"Medicentral Specialist Centre\",\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"avatar\": \"https://mSzyXzFNWyyNfAKnMfBTkzXwd.akoUzNU8mtwBL0edUVhmfToFrdsJh8,1y.HS\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"practice\": {\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"location_description\": \"Sydney NSW 2000\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ],\n        \"health_fund_relationship\": \"FULL_COVER\",\n        \"practice_location\": {\n          \"id\": 1900,\n          \"name\": \"Medicentral Specialist Centre\"\n        }\n      }\n    },\n    {\n      \"id\": 3457,\n      \"title\": \"Dr\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"display_name\": \"Dr John Smith\",\n      \"website\": \"http://www.stvincentssportsmed.com.au/\",\n      \"distance\": 1.5,\n      \"avatar\": \"http://iieCXw.ryvww4iWZgKpC+YUzwvln\",\n      \"health_fund_relationship\": \"FULL_COVER\",\n      \"specialties\": [\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": true\n        },\n        {\n          \"id\": 19,\n          \"name\": \"Orthopaedic Surgeon\",\n          \"is_medical\": true\n        }\n      ],\n      \"interests_description\": \"Knee replacement surgery\",\n      \"interests_description_html\": \"<p>Knee replacement surgery</p>\",\n      \"offers_hicaps\": false,\n      \"practice_location\": {\n        \"id\": 1900,\n        \"name\": \"Medicentral Specialist Centre\",\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"avatar\": \"https://ZDtDONxorDOYfFuiihQXlrcscDXYUvwNu.gdqKI.dlsVMRV89\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ]\n      },\n      \"practice\": {\n        \"address\": {\n          \"post_code\": \"2000\",\n          \"state\": \"NSW\",\n          \"street1\": \"Level 11\",\n          \"street2\": \"501 George Street\",\n          \"suburb\": \"Sydney\"\n        },\n        \"location_description\": \"Sydney NSW 2000\",\n        \"phones\": [\n          \"(02) 9972 2639\",\n          \"(02) 9972 2639\"\n        ],\n        \"health_fund_relationship\": \"ACCESS_GAP_COVER\",\n        \"practice_location\": {\n          \"id\": 1900,\n          \"name\": \"Medicentral Specialist Centre\"\n        }\n      }\n    }\n  ]\n}"
             }
           ]
         },
         {
           "name": "Get a practitioner",
-          "_postman_id": "3b639e2b-6595-4d70-a151-f91fc9deffea",
+          "id": "3b639e2b-6595-4d70-a151-f91fc9deffea",
           "request": {
             "method": "GET",
             "header": [
@@ -803,8 +803,7 @@
                   "id": "4e0a081c-56e6-45c0-896f-ccdfba73ee7d",
                   "key": "practitioner_id",
                   "value": "2048",
-                  "description": "(Required) The practitioner id",
-                  "type": "string"
+                  "description": "(Required) The practitioner id"
                 }
               ]
             },
@@ -812,7 +811,7 @@
           },
           "response": [
             {
-              "id": "1be74f51-0bb4-4cf1-944a-2094e1b70a16",
+              "id": "6a2cafba-07d0-483d-8886-26868534d940",
               "name": "response",
               "originalRequest": {
                 "method": "GET",
@@ -850,8 +849,8 @@
                   ]
                 }
               },
-              "status": "Not Found",
-              "code": 404,
+              "status": "OK",
+              "code": 200,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -861,7 +860,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n  \"detail\": \"Not found.\"\n}"
+              "body": "{\n  \"id\": 2048,\n  \"title\": \"Dr\",\n  \"name\": \"Dr John Smith\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Smith\",\n  \"avatar\": \"https://benSTldqjYZICl.fmuVLlHfkD9\",\n  \"bio\": \"Dr. John Smith is a specialist adult cardiologist and physician\",\n  \"hospitals\": [\n    {\n      \"id\": 17,\n      \"name\": \"Westmead Hospital\",\n      \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\",\n      \"address\": {\n        \"post_code\": \"2122\",\n        \"state\": \"NSW\",\n        \"street1\": \"Denistone Road\",\n        \"street2\": \"laborum aliqua labore\",\n        \"suburb\": \"Eastwood\"\n      },\n      \"phone\": \"02 9858 7888\",\n      \"fax\": \"02 9858 7403\"\n    },\n    {\n      \"id\": 17,\n      \"name\": \"Westmead Hospital\",\n      \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\",\n      \"address\": {\n        \"post_code\": \"2122\",\n        \"state\": \"NSW\",\n        \"street1\": \"Denistone Road\",\n        \"street2\": \"sit in\",\n        \"suburb\": \"Eastwood\"\n      },\n      \"phone\": \"02 9858 7888\",\n      \"fax\": \"02 9858 7403\"\n    }\n  ],\n  \"health_fund_relationship\": \"FULL_COVER\",\n  \"practices\": [\n    {\n      \"id\": 107103,\n      \"address\": {\n        \"post_code\": \"2000\",\n        \"state\": \"NSW\",\n        \"street1\": \"Suite 1, Level 1\",\n        \"street2\": \"341 George St\",\n        \"suburb\": \"Sydney\"\n      },\n      \"name\": \"NSW Cardiology\",\n      \"fax\": [\n        \"(02) 8009 2191\"\n      ],\n      \"phones\": [\n        \"(02) 8009 2191\",\n        \"(02) 8009 2191\"\n      ],\n      \"website\": \"https://www.nswcardiology.com.au/\",\n      \"practice_management_system\": {\n        \"id\": 19,\n        \"name\": \"Genie\"\n      },\n      \"is_booking_enabled\": false,\n      \"services\": [\n        \"Ut in ex cupidatat\",\n        \"mollit commodo pariatur Duis\"\n      ],\n      \"hours\": {\n        \"mon\": {\n          \"start\": \"08:00:00\",\n          \"end\": \"17:00:00\"\n        }\n      },\n      \"practice_location\": {\n        \"id\": 12,\n        \"name\": \"NSW Cardiology\"\n      }\n    },\n    {\n      \"id\": 107103,\n      \"address\": {\n        \"post_code\": \"2000\",\n        \"state\": \"NSW\",\n        \"street1\": \"Suite 1, Level 1\",\n        \"street2\": \"341 George St\",\n        \"suburb\": \"Sydney\"\n      },\n      \"name\": \"NSW Cardiology\",\n      \"fax\": [\n        \"(02) 8009 2191\"\n      ],\n      \"phones\": [\n        \"(02) 8009 2191\",\n        \"(02) 8009 2191\"\n      ],\n      \"website\": \"https://www.nswcardiology.com.au/\",\n      \"practice_management_system\": {\n        \"id\": 19,\n        \"name\": \"Genie\"\n      },\n      \"is_booking_enabled\": false,\n      \"services\": [\n        \"in occaecat\",\n        \"sed ullamco ut\"\n      ],\n      \"hours\": {\n        \"mon\": {\n          \"start\": \"08:00:00\",\n          \"end\": \"17:00:00\"\n        }\n      },\n      \"practice_location\": {\n        \"id\": 12,\n        \"name\": \"NSW Cardiology\"\n      }\n    }\n  ],\n  \"consultation_forms\": [\n    {\n      \"id\": -53842686,\n      \"title\": \"laborum\",\n      \"pdf\": \"https://EzPastuel.omjkU8RWGHtP6bvmtJ+\",\n      \"link\": \"https://gOnWLlZmDozYHhDQKZbyoBv.klR4+VWKinnRtxTyRLQlQM1lBGpVjWKKUW0H\"\n    },\n    {\n      \"id\": -74064562,\n      \"title\": \"proident minim et\",\n      \"pdf\": \"https://asohWHK.npnZPs7CITpPCqFYrThwKZbk5o5hfXXPd1HrdjhIo0FWX0C8BDXF.H3dWsI3\",\n      \"link\": \"http://oEQmhLIRYnT.rddyFmgkYZg0,RWYu0qZyF,XVzQE-BsVPfGwkBbO3Lpz\"\n    }\n  ],\n  \"interests\": [\n    {\n      \"id\": 17,\n      \"name\": \"knee\",\n      \"specialty\": 39\n    },\n    {\n      \"id\": 17,\n      \"name\": \"knee\",\n      \"specialty\": 39\n    }\n  ],\n  \"interests_description\": \"Preventative Cardiology, Non-invasive Cardiac Imaging\",\n  \"offers_hicaps\": false,\n  \"offers_telehealth\": true,\n  \"referral_template_name\": \"in pariatur\",\n  \"referrals_tagline\": \"aliquip reprehenderit\",\n  \"registation_numbers\": \"AHPRA: MED0001186359\",\n  \"specialties\": [\n    {\n      \"id\": -37502443,\n      \"name\": \"sed anim\",\n      \"is_medical\": true\n    },\n    {\n      \"id\": -2098790,\n      \"name\": \"exercitation sint irure\",\n      \"is_medical\": true\n    }\n  ]\n}"
             },
             {
               "id": "47e3717f-8990-4876-b1c6-f77a74109154",
@@ -916,7 +915,7 @@
               "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
             },
             {
-              "id": "6a2cafba-07d0-483d-8886-26868534d940",
+              "id": "1be74f51-0bb4-4cf1-944a-2094e1b70a16",
               "name": "response",
               "originalRequest": {
                 "method": "GET",
@@ -954,8 +953,8 @@
                   ]
                 }
               },
-              "status": "OK",
-              "code": 200,
+              "status": "Not Found",
+              "code": 404,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -965,13 +964,13 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n  \"id\": 2048,\n  \"title\": \"Dr\",\n  \"name\": \"Dr John Smith\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Smith\",\n  \"avatar\": \"https://benSTldqjYZICl.fmuVLlHfkD9\",\n  \"bio\": \"Dr. John Smith is a specialist adult cardiologist and physician\",\n  \"hospitals\": [\n    {\n      \"id\": 17,\n      \"name\": \"Westmead Hospital\",\n      \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\",\n      \"address\": {\n        \"post_code\": \"2122\",\n        \"state\": \"NSW\",\n        \"street1\": \"Denistone Road\",\n        \"street2\": \"laborum aliqua labore\",\n        \"suburb\": \"Eastwood\"\n      },\n      \"phone\": \"02 9858 7888\",\n      \"fax\": \"02 9858 7403\"\n    },\n    {\n      \"id\": 17,\n      \"name\": \"Westmead Hospital\",\n      \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\",\n      \"address\": {\n        \"post_code\": \"2122\",\n        \"state\": \"NSW\",\n        \"street1\": \"Denistone Road\",\n        \"street2\": \"sit in\",\n        \"suburb\": \"Eastwood\"\n      },\n      \"phone\": \"02 9858 7888\",\n      \"fax\": \"02 9858 7403\"\n    }\n  ],\n  \"health_fund_relationship\": \"FULL_COVER\",\n  \"practices\": [\n    {\n      \"id\": 107103,\n      \"address\": {\n        \"post_code\": \"2000\",\n        \"state\": \"NSW\",\n        \"street1\": \"Suite 1, Level 1\",\n        \"street2\": \"341 George St\",\n        \"suburb\": \"Sydney\"\n      },\n      \"name\": \"NSW Cardiology\",\n      \"fax\": [\n        \"(02) 8009 2191\"\n      ],\n      \"phones\": [\n        \"(02) 8009 2191\",\n        \"(02) 8009 2191\"\n      ],\n      \"website\": \"https://www.nswcardiology.com.au/\",\n      \"practice_management_system\": {\n        \"id\": 19,\n        \"name\": \"Genie\"\n      },\n      \"is_booking_enabled\": false,\n      \"services\": [\n        \"Ut in ex cupidatat\",\n        \"mollit commodo pariatur Duis\"\n      ],\n      \"hours\": {\n        \"mon\": {\n          \"start\": \"08:00:00\",\n          \"end\": \"17:00:00\"\n        }\n      },\n      \"practice_location\": {\n        \"id\": 12,\n        \"name\": \"NSW Cardiology\"\n      }\n    },\n    {\n      \"id\": 107103,\n      \"address\": {\n        \"post_code\": \"2000\",\n        \"state\": \"NSW\",\n        \"street1\": \"Suite 1, Level 1\",\n        \"street2\": \"341 George St\",\n        \"suburb\": \"Sydney\"\n      },\n      \"name\": \"NSW Cardiology\",\n      \"fax\": [\n        \"(02) 8009 2191\"\n      ],\n      \"phones\": [\n        \"(02) 8009 2191\",\n        \"(02) 8009 2191\"\n      ],\n      \"website\": \"https://www.nswcardiology.com.au/\",\n      \"practice_management_system\": {\n        \"id\": 19,\n        \"name\": \"Genie\"\n      },\n      \"is_booking_enabled\": false,\n      \"services\": [\n        \"in occaecat\",\n        \"sed ullamco ut\"\n      ],\n      \"hours\": {\n        \"mon\": {\n          \"start\": \"08:00:00\",\n          \"end\": \"17:00:00\"\n        }\n      },\n      \"practice_location\": {\n        \"id\": 12,\n        \"name\": \"NSW Cardiology\"\n      }\n    }\n  ],\n  \"consultation_forms\": [\n    {\n      \"id\": -53842686,\n      \"title\": \"laborum\",\n      \"pdf\": \"https://EzPastuel.omjkU8RWGHtP6bvmtJ+\",\n      \"link\": \"https://gOnWLlZmDozYHhDQKZbyoBv.klR4+VWKinnRtxTyRLQlQM1lBGpVjWKKUW0H\"\n    },\n    {\n      \"id\": -74064562,\n      \"title\": \"proident minim et\",\n      \"pdf\": \"https://asohWHK.npnZPs7CITpPCqFYrThwKZbk5o5hfXXPd1HrdjhIo0FWX0C8BDXF.H3dWsI3\",\n      \"link\": \"http://oEQmhLIRYnT.rddyFmgkYZg0,RWYu0qZyF,XVzQE-BsVPfGwkBbO3Lpz\"\n    }\n  ],\n  \"interests\": [\n    {\n      \"id\": 17,\n      \"name\": \"knee\",\n      \"specialty\": 39\n    },\n    {\n      \"id\": 17,\n      \"name\": \"knee\",\n      \"specialty\": 39\n    }\n  ],\n  \"interests_description\": \"Preventative Cardiology, Non-invasive Cardiac Imaging\",\n  \"offers_hicaps\": false,\n  \"offers_telehealth\": true,\n  \"referral_template_name\": \"in pariatur\",\n  \"referrals_tagline\": \"aliquip reprehenderit\",\n  \"registation_numbers\": \"AHPRA: MED0001186359\",\n  \"specialties\": [\n    {\n      \"id\": -37502443,\n      \"name\": \"sed anim\",\n      \"is_medical\": true\n    },\n    {\n      \"id\": -2098790,\n      \"name\": \"exercitation sint irure\",\n      \"is_medical\": true\n    }\n  ]\n}"
+              "body": "{\n  \"detail\": \"Not found.\"\n}"
             }
           ]
         },
         {
           "name": "Get a practice location",
-          "_postman_id": "c24c6b64-798a-4414-8530-cdc55e628c07",
+          "id": "c24c6b64-798a-4414-8530-cdc55e628c07",
           "request": {
             "method": "GET",
             "header": [
@@ -997,8 +996,7 @@
                   "id": "949b6b28-fd33-4392-ac8c-9289a9df9b18",
                   "key": "practice_id",
                   "value": "430",
-                  "description": "(Required) The practice location id",
-                  "type": "string"
+                  "description": "(Required) The practice location id"
                 }
               ]
             },
@@ -1052,52 +1050,6 @@
               "body": "{\n  \"id\": 430,\n  \"address\": {\n    \"post_code\": \"2022\",\n    \"state\": \"NSW\",\n    \"street1\": \"Level 1\",\n    \"street2\": \"17-21 Hunter St\",\n    \"suburb\": \"Bondi Junction\"\n  },\n  \"amount_of_locations\": 2,\n  \"avatar\": \"http://wSrJNyXLggfVNfLuKOMEVdDzSRAg.cofDW9HtrKb,3.R-ehGzSi6JPJHHU8.gIlXl8ld3nhZkeqSg5L34.-EvekEvCaM2\",\n  \"description\": \"<p><strong>Test</strong> description</p>\",\n  \"enhanced\": true,\n  \"extra_info\": {\n    \"comment\": \"comment\",\n    \"open_hours\": [\n      {\n        \"day\": \"Mon\",\n        \"hours\": \"7am - 7pm\"\n      },\n      {\n        \"day\": \"Tues\",\n        \"hours\": \"7am - 7pm\"\n      },\n      {\n        \"day\": \"Wed\",\n        \"hours\": \"7am - 7pm\"\n      },\n      {\n        \"day\": \"Thurs\",\n        \"hours\": \"7am - 7pm\"\n      },\n      {\n        \"day\": \"Fri\",\n        \"hours\": \"7am - 6pm\"\n      },\n      {\n        \"day\": \"Sat\",\n        \"hours\": \"7:30am – 12:30pm\"\n      }\n    ]\n  },\n  \"fax\": [\n    \"(02) 9890 7655\"\n  ],\n  \"languages_spoken\": [\n    \"Chinese (Cantonese)\",\n    \"Chinese (Mandarin)\",\n    \"Italian\",\n    \"Portuguese\",\n    \"Spanish\",\n    \"Vietnamese\"\n  ],\n  \"locality\": \"Parramatta NSW 2150\",\n  \"name\": \"BJC Health\",\n  \"offers_hicaps\": true,\n  \"offers_telehealth\": true,\n  \"open_indicator\": \"open now\",\n  \"phones\": [\n    \"(02) 9972 2639\"\n  ],\n  \"practice_group_id\": 58,\n  \"practice_group_link\": \"http://test.healthshare.com.au/practices/bjc-health/\",\n  \"practitioners\": [\n    {\n      \"id\": 395253,\n      \"avatar\": \"http://healthshare.com.au/static/images/empty_avatar.png\",\n      \"display_name\": \"Stephanie Hage\",\n      \"has_fees\": false,\n      \"initials\": \"SH\",\n      \"interests_description\": \"\",\n      \"location\": {\n        \"text\": \"Level 1\",\n        \"17-21 Hunter St\": null,\n        \"Parramatta NSW 2150\": null,\n        \"tooltip\": \"\"\n      },\n      \"offers_telehealth\": true,\n      \"offers_hicaps\": true,\n      \"profile_url\": \"http://test.healthshare.com.au/profile/professional/374263-stephanie-hage/\",\n      \"specialties\": [\n        {\n          \"id\": 430,\n          \"name\": \"Dietitian\",\n          \"is_medical\": false\n        }\n      ]\n    }\n  ],\n  \"street_address\": \"Level 1, 17-21 Hunter St\",\n  \"website\": \"http://bjchealth.com.au/\"\n}"
             },
             {
-              "id": "5680ed37-8f71-4a40-b981-11c32ba004d0",
-              "name": "response",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "description": "Added as a part of security scheme: bearer",
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/api/partners/v1/practice-locations/:practice_id",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "partners",
-                    "v1",
-                    "practice-locations",
-                    ":practice_id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "practice_id",
-                      "value": "430",
-                      "description": "(Required) The practice location id"
-                    }
-                  ]
-                }
-              },
-              "status": "Not Found",
-              "code": 404,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n  \"detail\": \"Not found.\"\n}"
-            },
-            {
               "id": "e072bd0d-153b-45dc-b257-a3059cb08e47",
               "name": "response",
               "originalRequest": {
@@ -1142,12 +1094,58 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
+            },
+            {
+              "id": "5680ed37-8f71-4a40-b981-11c32ba004d0",
+              "name": "response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/partners/v1/practice-locations/:practice_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "practice-locations",
+                    ":practice_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "practice_id",
+                      "value": "430",
+                      "description": "(Required) The practice location id"
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"detail\": \"Not found.\"\n}"
             }
           ]
         },
         {
           "name": "Get a practice group",
-          "_postman_id": "84f41b52-da77-4ba8-bdb8-c285b21ca675",
+          "id": "84f41b52-da77-4ba8-bdb8-c285b21ca675",
           "request": {
             "method": "GET",
             "header": [
@@ -1173,60 +1171,13 @@
                   "id": "26eecd22-a083-40fb-8b4b-43db1ac5bccc",
                   "key": "practice_id",
                   "value": "58",
-                  "description": "(Required) The practice group id",
-                  "type": "string"
+                  "description": "(Required) The practice group id"
                 }
               ]
             },
             "description": "Returns details about a specific practice group from their id."
           },
           "response": [
-            {
-              "id": "1b04156c-fc2c-4cd9-861b-617ee4b15c52",
-              "name": "response",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "description": "Added as a part of security scheme: bearer",
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/api/partners/v1/practice-groups/:practice_id",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "partners",
-                    "v1",
-                    "practice-groups",
-                    ":practice_id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "practice_id",
-                      "value": "58",
-                      "description": "(Required) The practice group id"
-                    }
-                  ]
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
-            },
             {
               "id": "2da61305-690f-429c-9b8e-3415c616fb5a",
               "name": "response",
@@ -1272,6 +1223,52 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n  \"id\": 58,\n  \"avatar\": \"http://ASdcKrs.nybQOfaHUED+1FmTYjQX8P,vAQui\",\n  \"description\": \"<p><strong>Test</strong> description</p>\",\n  \"health_fund_relationship\": \"MEMBER_PLUS_OPTICAL\",\n  \"fax\": [\n    \"(02) 9413 3316\"\n  ],\n  \"name\": \"BJC Health\",\n  \"phones\": [\n    \"(02) 9972 2639\"\n  ],\n  \"website\": \"http://bjchealth.com.au/\",\n  \"locations\": [\n    {\n      \"id\": 430,\n      \"address\": {\n        \"post_code\": \"2150\",\n        \"street1\": \"Level 1\",\n        \"street2\": \"17-21 Hunter St\",\n        \"state\": \"NSW\",\n        \"suburb\": \"Parramatta\"\n      },\n      \"avatar\": \"http://zjuybKmtgTKznSYDfk.jrpzvcm1vAiU1SRUr1n0dyT3iH,x0nOKawHLaaXCS4GjfFAxkd9o2e9TlkTnvTmqsPKrIZA3\",\n      \"description\": \"<p><strong>Test</strong> description</p>\",\n      \"email\": \"admin@bjchealth.com.au\",\n      \"extra_info\": {\n        \"comment\": \"comment\",\n        \"open_hours\": [\n          {\n            \"day\": \"Mon\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Tues\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Wed\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Thurs\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Fri\",\n            \"hours\": \"7am - 6pm\"\n          },\n          {\n            \"day\": \"Sat\",\n            \"hours\": \"7:30am – 12:30pm\"\n          }\n        ]\n      },\n      \"fax\": [\n        \"(02) 9890 7655\"\n      ],\n      \"health_fund_relationship\": \"MEMBER_PLUS_OPTICAL\",\n      \"languages_spoken\": [\n        \"Chinese (Cantonese)\",\n        \"Chinese (Mandarin)\",\n        \"Italian\",\n        \"Portuguese\",\n        \"Spanish\",\n        \"Vietnamese\"\n      ],\n      \"locality\": \"Parramatta NSW 2150\",\n      \"name\": \"BJC Health\",\n      \"offers_telehealth\": false,\n      \"open_indicator\": \"open now\",\n      \"phones\": [\n        \"(02) 9972 2639\"\n      ],\n      \"practice_group_id\": 58,\n      \"practice_group_link\": \"http://test.healthshare.com.au/practices/bjc-health/\",\n      \"practitioners\": [\n        {\n          \"id\": 395253,\n          \"avatar\": \"http://healthshare.com.au/static/images/empty_avatar.png\",\n          \"display_name\": \"Stephanie Hage\",\n          \"initials\": \"SH\",\n          \"health_fund_relationship\": \"MEMBER_PLUS_OPTICAL\",\n          \"interests_description\": \"\",\n          \"location\": {\n            \"text\": \"Level 1\",\n            \"17-21 Hunter St\": null,\n            \"Parramatta NSW 2150\": null,\n            \"tooltip\": \"\"\n          },\n          \"offers_telehealth\": true,\n          \"profile_url\": \"http://test.healthshare.com.au/profile/professional/374263-stephanie-hage/\",\n          \"specialties\": [\n            {\n              \"name\": \"Dietitian\",\n              \"is_medical\": false\n            }\n          ]\n        }\n      ],\n      \"website\": \"http://bjchealth.com.au/\"\n    },\n    {\n      \"id\": 430,\n      \"address\": {\n        \"post_code\": \"2150\",\n        \"street1\": \"Level 1\",\n        \"street2\": \"17-21 Hunter St\",\n        \"state\": \"NSW\",\n        \"suburb\": \"Parramatta\"\n      },\n      \"avatar\": \"http://XbLttVbJndbgYnzyZhFXxQSXpxqfVUdNT.sgVGIxuXuPBDdUMHkHLWyMcIxwwrSJpvP9JBczJxgSKUQmqk\",\n      \"description\": \"<p><strong>Test</strong> description</p>\",\n      \"email\": \"admin@bjchealth.com.au\",\n      \"extra_info\": {\n        \"comment\": \"comment\",\n        \"open_hours\": [\n          {\n            \"day\": \"Mon\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Tues\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Wed\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Thurs\",\n            \"hours\": \"7am - 7pm\"\n          },\n          {\n            \"day\": \"Fri\",\n            \"hours\": \"7am - 6pm\"\n          },\n          {\n            \"day\": \"Sat\",\n            \"hours\": \"7:30am – 12:30pm\"\n          }\n        ]\n      },\n      \"fax\": [\n        \"(02) 9890 7655\"\n      ],\n      \"health_fund_relationship\": \"MEMBER_PLUS_OPTICAL\",\n      \"languages_spoken\": [\n        \"Chinese (Cantonese)\",\n        \"Chinese (Mandarin)\",\n        \"Italian\",\n        \"Portuguese\",\n        \"Spanish\",\n        \"Vietnamese\"\n      ],\n      \"locality\": \"Parramatta NSW 2150\",\n      \"name\": \"BJC Health\",\n      \"offers_telehealth\": false,\n      \"open_indicator\": \"open now\",\n      \"phones\": [\n        \"(02) 9972 2639\"\n      ],\n      \"practice_group_id\": 58,\n      \"practice_group_link\": \"http://test.healthshare.com.au/practices/bjc-health/\",\n      \"practitioners\": [\n        {\n          \"id\": 395253,\n          \"avatar\": \"http://healthshare.com.au/static/images/empty_avatar.png\",\n          \"display_name\": \"Stephanie Hage\",\n          \"initials\": \"SH\",\n          \"health_fund_relationship\": \"MEMBER_PLUS_OPTICAL\",\n          \"interests_description\": \"\",\n          \"location\": {\n            \"text\": \"Level 1\",\n            \"17-21 Hunter St\": null,\n            \"Parramatta NSW 2150\": null,\n            \"tooltip\": \"\"\n          },\n          \"offers_telehealth\": true,\n          \"profile_url\": \"http://test.healthshare.com.au/profile/professional/374263-stephanie-hage/\",\n          \"specialties\": [\n            {\n              \"name\": \"Dietitian\",\n              \"is_medical\": false\n            }\n          ]\n        }\n      ],\n      \"website\": \"http://bjchealth.com.au/\"\n    }\n  ]\n}"
+            },
+            {
+              "id": "1b04156c-fc2c-4cd9-861b-617ee4b15c52",
+              "name": "response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/partners/v1/practice-groups/:practice_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "practice-groups",
+                    ":practice_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "practice_id",
+                      "value": "58",
+                      "description": "(Required) The practice group id"
+                    }
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
             },
             {
               "id": "ea731f81-0797-484a-8bc6-50c7843666d4",
@@ -1323,7 +1320,7 @@
         },
         {
           "name": "Get a hospital",
-          "_postman_id": "b88376e5-c314-45e3-aa0e-0639027abb83",
+          "id": "b88376e5-c314-45e3-aa0e-0639027abb83",
           "request": {
             "method": "GET",
             "header": [
@@ -1349,60 +1346,13 @@
                   "id": "c9f2b9c6-2ffb-41bb-8792-81e3c05fc5af",
                   "key": "hospital_id",
                   "value": "676",
-                  "description": "(Required) The hospital id",
-                  "type": "string"
+                  "description": "(Required) The hospital id"
                 }
               ]
             },
             "description": "Returns details about a specific hospital from their id."
           },
           "response": [
-            {
-              "id": "5e04f479-00d0-43df-8de0-0fca8e79ab4b",
-              "name": "response",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "description": "Added as a part of security scheme: bearer",
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/api/partners/v1/hospitals/:hospital_id",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "api",
-                    "partners",
-                    "v1",
-                    "hospitals",
-                    ":hospital_id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "hospital_id",
-                      "value": "676",
-                      "description": "(Required) The hospital id"
-                    }
-                  ]
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
-            },
             {
               "id": "84d3eb64-a4de-408c-8b12-3e657fcc2bf5",
               "name": "response",
@@ -1448,6 +1398,52 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n  \"id\": 676,\n  \"name\": \"Ryde Hospital\",\n  \"type\": \"public\",\n  \"address\": {\n    \"post_code\": \"2122\",\n    \"state\": \"NSW\",\n    \"street1\": \"Denistone Road\",\n    \"street2\": \"pariatur aute sint\",\n    \"suburb\": \"Eastwood\"\n  },\n  \"description\": \"<p><strong>Test</strong> description</p>\",\n  \"group\": {\n    \"id\": 1,\n    \"name\": \"group\"\n  },\n  \"health_fund_relationship\": \"MEMBER_PLUS_HOSPITAL\",\n  \"phone\": \"02 9858 7888\",\n  \"fax\": [\n    \"exercitation ad nisi consequat\",\n    \"id\"\n  ],\n  \"practitioners\": [\n    {\n      \"id\": 16224,\n      \"display_name\": \"Dr John Napoli\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Napoli\",\n      \"specialties\": [\n        {\n          \"id\": 62,\n          \"is_medical\": true,\n          \"name\": \"Gastroenterologist\"\n        }\n      ]\n    }\n  ]\n}"
+            },
+            {
+              "id": "5e04f479-00d0-43df-8de0-0fca8e79ab4b",
+              "name": "response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/partners/v1/hospitals/:hospital_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "hospitals",
+                    ":hospital_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "hospital_id",
+                      "value": "676",
+                      "description": "(Required) The hospital id"
+                    }
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"detail\": \"Authentication credentials were not provided.\"\n}"
             },
             {
               "id": "e4ce0e40-5689-4f1c-8e94-ebd7c3eef8ac",
@@ -1498,7 +1494,12 @@
           ]
         }
       ],
-      "_postman_id": "cc73a359-5f59-4f3a-99d0-e63e2e6cede9"
+      "id": "cc73a359-5f59-4f3a-99d0-e63e2e6cede9"
+    },
+    {
+      "name": "001",
+      "item": [],
+      "id": "fe6e627b-3d8f-4133-b92d-6867847c9d20"
     }
   ],
   "auth": {
