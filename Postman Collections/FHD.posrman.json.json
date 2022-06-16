@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "065246f4-240d-4cf0-83ae-af868565d728",
+		"name": "Frizbee - New",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "eb3f65c4-5175-49e9-9a8d-d54fe2874818"
+		},
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "beffd803-78ba-40d1-825c-9b8768a0d6d3"
+		},
+		{
+			"name": "New Folder Copy 3",
+			"item": [],
+			"_postman_id": "240834f1-511e-4665-9fad-88e1a4e974b1"
+		},
+		{
+			"name": "New Folder Copy 3",
+			"item": [],
+			"_postman_id": "592a9722-f9e2-4f0a-9570-957a2ad9ae10"
+		},
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "40f258dd-5754-4aed-9ded-b13d41166141"
+		},
+		{
+			"name": "New Folder Copy 2",
+			"item": [],
+			"_postman_id": "89ef6135-95d9-41c2-86cb-7ae7cac84daf"
+		},
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "23194184-f16d-4ffc-ab58-4bfd47d16b34"
+		},
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "4256282d-9be0-4987-b6c9-23bac44098e1"
+		},
+		{
+			"name": "New Folder Copy",
+			"item": [],
+			"_postman_id": "91238643-7365-4c6a-93ca-d8d52c298ab2"
+		},
+		{
+			"name": "3.4.2.1. GET : Request",
+			"event": [
+				{
+					"disabled": false,
+					"script": {
+						"id": "542eb1d2-ba48-4074-ac1f-0d3233704e82",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					},
+					"listen": "prerequest"
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5fa6165f-092f-4c45-8475-c06bb97e74ce",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "eaf3353c-f678-43a0-b65c-0165baf66b59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"key": "Content-Type"
+					},
+					{
+						"key": "Timestamp",
+						"value": "{{current_timestamp}}",
+						"type": "text"
+					},
+					{
+						"key": "hash",
+						"value": "{{hash_request}}",
+						"type": "text"
+					},
+					{
+						"value": "1",
+						"type": "text",
+						"key": "debug"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1.0/codes/request?reference=myref2&quantity=10&parameters={\"family\":1,\"product\":2}&withpin=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1.0",
+						"codes",
+						"request"
+					],
+					"query": [
+						{
+							"key": "reference",
+							"value": "myref2"
+						},
+						{
+							"key": "quantity",
+							"value": "10"
+						},
+						{
+							"key": "parameters",
+							"value": "{\"family\":1,\"product\":2}"
+						},
+						{
+							"key": "withpin",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.4.2.1. GET : Request Copy",
+			"event": [
+				{
+					"disabled": false,
+					"script": {
+						"id": "29d14f3c-948f-45b5-8cd0-c5ffef3897bb",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					},
+					"listen": "prerequest"
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "bbd5f9da-c9ff-4f72-a3c9-6d59949eb9db",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "f704db85-ad42-472c-a400-fb142c583ab9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"key": "Content-Type"
+					},
+					{
+						"key": "Timestamp",
+						"value": "{{current_timestamp}}",
+						"type": "text"
+					},
+					{
+						"key": "hash",
+						"value": "{{hash_request}}",
+						"type": "text"
+					},
+					{
+						"value": "1",
+						"type": "text",
+						"key": "debug"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1.0/codes/request?reference=myref2&quantity=10&parameters={\"family\":1,\"product\":2}&withpin=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1.0",
+						"codes",
+						"request"
+					],
+					"query": [
+						{
+							"key": "reference",
+							"value": "myref2"
+						},
+						{
+							"key": "quantity",
+							"value": "10"
+						},
+						{
+							"key": "parameters",
+							"value": "{\"family\":1,\"product\":2}"
+						},
+						{
+							"key": "withpin",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.4.2.6. PUT: Activate",
+			"event": [
+				{
+					"disabled": false,
+					"listen": "prerequest",
+					"script": {
+						"id": "0c089864-5364-49a8-a96e-344903689d62",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "69b52957-9045-43fc-9554-e7d00d329aa1",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "475436ee-1363-4afe-afa4-2029da9ea55a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"type": "text",
+						"value": "application/x-www-form-urlencoded",
+						"key": "Content-Type"
+					},
+					{
+						"value": "{{current_timestamp}}",
+						"type": "text",
+						"key": "Timestamp"
+					},
+					{
+						"value": "{{hash_request}}",
+						"key": "hash",
+						"type": "text"
+					},
+					{
+						"key": "debug",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "91321102000000203",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "validity",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": "{{base_url}}/api/v1.0/codes/activate"
+			},
+			"response": []
+		},
+		{
+			"name": "3.4.2.1. PUT: Credit",
+			"event": [
+				{
+					"disabled": false,
+					"script": {
+						"id": "16dff08d-3af3-428b-8424-8b636794e035",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					},
+					"listen": "prerequest"
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "43486205-b598-438a-927c-626302e13afe",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "86f9aba6-e185-474e-b5f9-0cc2a21a7370",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"type": "text",
+						"value": "{{current_timestamp}}",
+						"key": "Timestamp"
+					},
+					{
+						"value": "{{hash_request}}",
+						"type": "text",
+						"key": "hash"
+					},
+					{
+						"value": "1",
+						"type": "text",
+						"key": "debug"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "91321102000000013",
+							"type": "text"
+						},
+						{
+							"key": "diffamount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "transaction",
+							"value": "id1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": "{{base_url}}/api/v1.0/codes/credit"
+			},
+			"response": []
+		},
+		{
+			"name": "3.4.1.1. GET : Version",
+			"event": [
+				{
+					"listen": "prerequest",
+					"disabled": false,
+					"script": {
+						"id": "188b9812-4f8c-4309-859b-6b66b153849b",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e195663e-9cf3-41a4-b881-4f41d58d7673",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "4fde7af7-0a41-4ca9-927f-7f92dbb30d20",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"type": "text",
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"value": "{{current_timestamp}}",
+						"key": "Timestamp",
+						"type": "text"
+					},
+					{
+						"type": "text",
+						"key": "hash",
+						"value": "{{hash_request}}"
+					},
+					{
+						"type": "text",
+						"key": "debug",
+						"value": "1"
+					}
+				],
+				"url": "{{base_url}}/api/v1.0/information/version"
+			},
+			"response": []
+		},
+		{
+			"name": "3.4.1.2. GET : Configuration",
+			"event": [
+				{
+					"disabled": false,
+					"script": {
+						"id": "3a167b78-c15b-4ccf-81de-c10fd6a8aaef",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					},
+					"listen": "prerequest"
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "41d26a8b-bfad-470a-a219-ca70f34b0a3a",
+						"exec": [
+							"pm.environment.get(\"variable_key\");",
+							"pm.variables.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.globals.get(\"variable_key\");",
+							"pm.collectionVariables.get(\"variable_key\");",
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "12fa4b66-3dc3-404d-acac-2950caa3e68b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "{{customer_id}}",
+						"password": "{{hash_password}}",
+						"showPassword": false
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"type": "text",
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"type": "text",
+						"key": "Timestamp",
+						"value": "{{current_timestamp}}"
+					},
+					{
+						"key": "hash",
+						"type": "text",
+						"value": "{{hash_request}}"
+					},
+					{
+						"value": "1",
+						"key": "debug",
+						"type": "text"
+					}
+				],
+				"url": "{{base_url}}/api/v1.0/information/configuration"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"var current_timestamp = Math.round(new Date() / 1000);",
+					"var apikey = pm.collectionVariables.get(\\\"apikey\\\");",
+					"var customer_id = pm.collectionVariables.get(\\\"customer_id\\\");",
+					"console.log(\\\"apikey = \\\" + apikey)",
+					"console.log(\\\"customer_id = \\\" + customer_id)",
+					"//Compute hash for basic auth\",",
+					"var hash = CryptoJS.HmacSHA256(customer_id,apikey).toString()",
+					"pm.collectionVariables.set(\\\"current_timestamp\\\", current_timestamp)",
+					"pm.collectionVariables.set(\\\"hash_password\\\", hash)"
+				],
+				"id": "52d5c527-36c8-4035-8ad8-641f60945f3e"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "87d7bd64-fb81-43a3-b233-65f2fa99c3b7"
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "faaa37fc-e4ad-4df1-bcee-f0cea8be4be1",
+			"key": "data",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "5a4d5d1e-ec80-415c-94e1-752489636ee3",
+			"key": "retrieve",
+			"value": "Lotus",
+			"type": "string"
+		}
+	]
+}
