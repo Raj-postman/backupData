@@ -13,6 +13,7 @@ files[] = {"id":"6713089-b142d0d0-c3fe-424a-9c0c-5630cbdc816e","path":"ChinA1.js
 [relations.apiDefinition]
 rootDirectory = postman/schemas
 files[] = {"path":"index.yaml","metaData":{}}
+files[] = {"path":"PetStore Swagger.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
